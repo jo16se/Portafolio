@@ -2,35 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="preload" href="CSS/normalize.css" as="style">
+     <link rel="stylesheet" href="CSS/normalize.css">
+     <link rel="preload" href="CSS/styles.css" as="style">
+     <link rel="stylesheet" href="CSS/styles.css">
     <title>Portfolio Jose Luis Mus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <main>
-      <header>
-        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-        <h1>Mi Portfolio</h1>
-        <nav id="navbar">
-          <ul>
-            <li><a href="#welcome-section">Sobre mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+        
+      <h1 class="propietario">Jose Luis</h1>
+      <nav id="navbar">
+        
+        <ul>
+          <li><a href="#welcome-section">Sobre mi</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenedor">
 
       <section id="welcome-section">
         <h1>Hola</h1>
         <p><a id="profile-link" target="_blank" href="https://www.freecodecamp.org/jo16se">Mi perfil en Freecamp Code</a></p>
       </section>
+
       <section id="projects">
+        <h2>Proyectos</h2>
         <div class="project-tile">
           <p><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104">Building a pinguin</a></p>
         </div>
       </section>
-      <footer id="contact"></footer>
+
+      <section id="conocimiento">
+        <h2>Conocimientos</h2>
+        <div class="conocimiento-tile">
+          
+          <p><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104">Building a pinguin</a></p>
+        </div>
+      </section>
+
+      
     </main>
+    <footer id="contact">
+      
+               <form class="formulario">
+                    <fieldset>
+                         <legend>Contáctame llenando todos los campos</legend>
+                         
+                         <div class="contenedor-campos">
+                              <div class="campo">
+                                   <label for="">Nombre</label>
+                                   <input class="input-text" type="text" placeholder="Tu Nombre">
+                              </div>
+                              <div class="campo">
+                                   <label for="">Teléfono</label>
+                                   <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                              </div>
+                              <div class="campo">
+                                   <label for="">Correo</label>
+                                   <input class="input-text" type="email" placeholder="Tu Correo">
+                              </div>
+                              <div class="campo">
+                                   <label for="">Mensaje</label>
+                                   <textarea class="input-text"></textarea>
+                              </div> 
+                         </div>   <!-- contenedor-campos -->
+
+                         <div class="alinear-derecha">
+                              <input class="boton w-sm-100" type="submit" value="Enviar">
+                         </div>
+                    </fieldset>
+                  </form>
+    </footer>
   </body>
 </html>
